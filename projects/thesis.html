@@ -174,18 +174,73 @@
           </section>
         </section>
         <section class="detail-section">
-          <h2>Empirical strategy</h2>
-          <p>I estimated pooled ordinary least squares (OLS) regressions for three complementary outcomes—HDDS, FCS and rCSI—to examine associations between marital status, productive resources and household food security.</p>
-          <h3>Baseline specification</h3>
-          <div aria-label="Y i t equals alpha plus beta one widow i t plus gamma prime X i t plus epsilon i t" class="thesis-equation" role="math">Y <sub>it</sub> = α + β <sub>1</sub> Widow <sub>it</sub> + γ′X <sub>it</sub> + ε <sub>it</sub>
-          </div>
-          <p>Here, <em>Y</em> denotes a food-security outcome for household <em>i</em> in wave <em>t</em>; <em>Widow</em> identifies widowed female household heads, and <em>X</em> represents observed household and socioeconomic covariates. The coefficient β <sub>1</sub> describes the conditional association between widowhood and the outcome. </p>
-          <h3>Resource and interaction specifications</h3>
-          <div aria-label="Y i t equals alpha plus beta one widow plus beta two resource plus beta three widow times resource plus gamma prime X plus epsilon" class="thesis-equation" role="math">Y <sub>it</sub> = α + β <sub>1</sub> Widow <sub>it</sub> + β <sub>2</sub> Resource <sub>it</sub> + β <sub>3</sub> (Widow <sub>it</sub> × Resource <sub>it</sub>) + γ′X <sub>it</sub> + ε <sub>it</sub>
-          </div>
-          <p>Extended models examine land and education in separate specifications and test whether their associations with food-security outcomes differ by marital status. The interaction coefficient β <sub>3</sub> captures that difference. The equations summarize the model families rather than listing every estimated specification. </p>
-          <p>Standard errors are clustered at household level to account for repeated observations across waves. As an observational pooled OLS analysis, the results describe <strong>conditional associations, not causal effects</strong>. </p>
+          
+<h3>Empirical strategy</h3>
+
+<p>
+  I estimated pooled ordinary least squares (OLS) models for
+  three food-security outcomes (HDDS, FCS and rCSI).
+  Two main specifications are presented below.
+</p>
+
+<h4>1. Baseline model</h4>
+
+<p>
+  Examines the association between marital status and household
+  food security, controlling for governorate, education, age,
+  land ownership and receipt of aid.
+</p>
+
+<div class="formula" style="overflow-x: auto; text-align: center;">
+  \[
+  \begin{aligned}
+  FoodSecurity_i ={}&
+  \beta_0 + \beta_1 MaritalStatus_i \\
+  &+ \beta_2 Governorate_i
+  + \beta_3 Education_i \\
+  &+ \beta_4 Age_i
+  + \beta_5 \log(LandOwned_i) \\
+  &+ \beta_6 AnyAid_i + \varepsilon_i
+  \end{aligned}
+  \]
+</div>
+
+<h4>2. Land interaction model</h4>
+
+<p>
+  Introduces an interaction between marital status and logged
+  land ownership to test whether the association between land
+  resources and food security differs between married and
+  widowed female household heads.
+</p>
+
+<div class="formula" style="overflow-x: auto; text-align: center;">
+  \[
+  \begin{aligned}
+  FoodSecurity_i ={}&
+  \beta_0 + \beta_1 MaritalStatus_i \\
+  &+ \beta_2 \log(LandOwned_i) \\
+  &+ \beta_3 \big(
+  MaritalStatus_i \times \log(LandOwned_i)
+  \big) \\
+  &+ \beta_4 Governorate_i
+  + \beta_5 Education_i \\
+  &+ \beta_6 Age_i
+  + \beta_7 AnyAid_i + \varepsilon_i
+  \end{aligned}
+  \]
+</div>
+
+<p>
+  An additional interaction specification examines whether
+  the association between education and food security differs
+  by marital status. Standard errors are clustered at the
+  household level to account for repeated observations across
+  survey waves. The estimates represent conditional associations,
+  not causal effects.
+</p>
         </section>
+        <section>
         <section class="detail-section">
           <h2>Key findings</h2>
           <ul>
