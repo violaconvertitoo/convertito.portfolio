@@ -1,11 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Master's thesis: women's empowerment, marital status and household food security in Syria. Quantitative analysis of 932 female-headed household observations.">
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <meta content="Master's thesis: women's empowerment, marital status and household food security in Syria. Quantitative analysis of 932 female-headed household observations." name="description" />
     <title>Empowering Women, Securing Food | Viola Convertito</title>
-    <link rel="stylesheet" href="../style.css">
+    <link href="../style.css" rel="stylesheet" />
+    <style>
+      /* Thesis page only: equations and responsive paired figures */
+      .thesis-equation {
+        margin: 1.1rem 0;
+        padding: 1rem 1.15rem;
+        background: #f5f7f9;
+        border-left: 3px solid #29435b;
+        border-radius: 3px;
+        font-family: Georgia, "Times New Roman", serif;
+        font-size: 1.08rem;
+        line-height: 1.9;
+        overflow-x: auto;
+      }
+
+      .thesis-equation sub {
+        font-size: .7em;
+      }
+
+      .thesis-figure-grid {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 1.25rem;
+        align-items: start;
+        margin: 1.5rem 0;
+      }
+
+      .thesis-figure-grid figure {
+        margin: 0;
+        min-width: 0;
+      }
+
+      .thesis-figure-grid img {
+        display: block;
+        width: 100%;
+        height: auto;
+        object-fit: contain;
+      }
+
+      @media (max-width: 700px) {
+        .thesis-figure-grid {
+          grid-template-columns: 1fr;
+        }
+
+        .thesis-equation {
+          font-size: .95rem;
+        }
+      }
+    </style>
   </head>
   <body>
     <nav>
@@ -34,8 +82,8 @@
       </header>
       <div class="detail-main">
         <figure>
-          <a class="figure-link" href="../images/thesis-syria-woman.png" target="_blank" rel="noopener noreferrer" title="Open photograph">
-            <img class="detail-figure" src="../images/thesis-syria-woman.png" alt="Woman seated outside a tent in Syria" loading="lazy">
+          <a class="figure-link" href="../images/thesis-syria-woman.png" rel="noopener noreferrer" target="_blank" title="Open photograph">
+            <img alt="Woman seated outside a tent in Syria" class="detail-figure" loading="lazy" src="../images/thesis-syria-woman.png" />
           </a>
         </figure>
         <p class="detail-lead">This thesis examines whether female household headship translates into meaningful empowerment when access to land, education and social protection remains shaped by patriarchal institutions and conflict. Using household survey data from Syria, I investigate how widowhood and productive resources relate to three complementary dimensions of food security.</p>
@@ -51,11 +99,28 @@
           </div>
         </div>
         <section class="detail-section">
-          <h2>Research question &amp; hypotheses</h2>
+          <h2>Theoretical framework</h2>
+          <h3>Women's empowerment, marital status and food security</h3>
+          <p>Household food security depends not only on food availability, but also on the resources, decision-making power and social conditions that shape access to food. In conflict-affected Syria, women may assume greater responsibility for household provisioning without gaining equivalent control over productive assets or institutional support.</p>
+          <p>Drawing on Kabeer's (1999) framework, this thesis conceptualizes women's empowerment through three interconnected dimensions: <strong>resources, agency and achievements</strong>. Land and education are potential empowerment resources; household food security is one dimension of well-being. Yet the ability to translate resources into improved outcomes depends on the social and institutional conditions under which women exercise agency. </p>
+          <p>
+            <strong>Marital status is a central structural condition in this process.</strong> Widowhood may increase women's household decision-making responsibilities while weakening access to assets, social legitimacy and support networks. Female headship, therefore, does not necessarily imply meaningful empowerment.
+          </p>
+          <figure>
+            <a class="figure-link" href="../images/thesis-conceptual-framework.png" rel="noopener noreferrer" target="_blank">
+              <img alt="Original thesis conceptual framework connecting resources, agency, marital status and food security" loading="lazy" src="../images/thesis-conceptual-framework.png" />
+            </a>
+            <figcaption>Conceptual framework reproduced from the thesis (Figure 1).</figcaption>
+          </figure>
+        </section>
+        <section class="detail-section">
+          <h2>Research gap, question &amp; hypotheses</h2>
+          <p>
+            <strong>Research gap:</strong> Existing research has established links between women’s empowerment and household food security, but less attention has been paid to how marital status shapes women’s ability to access and benefit from productive resources in patriarchal, conflict-affected settings. This study examines whether widowhood is associated with food insecurity and whether land and education offer different benefits to married and widowed female household heads.
+          </p>
           <p>
             <strong>Research question:</strong> How does marital status shape the relationship between women's access to resources and household food security in conflict-affected Syria?
           </p>
-          <p>Drawing on a framework of resources, agency and achievements, the study treats marital status as a structural condition that may influence women's ability to turn productive assets and education into improved household welfare.</p>
           <ul>
             <li>
               <strong>H1:</strong> Widowed women are more likely to experience household food insecurity than married women.
@@ -75,45 +140,51 @@
           </ul>
         </section>
         <section class="detail-section">
-          <h2>Research design &amp; data</h2>
+          <h2>Data and methods</h2>
+          <h3>Data and analytical sample</h3>
           <p>The study uses anonymized agricultural household survey data from five Syrian governorates—Hama, Deir-ez-Zor, Aleppo, Homs and Rural Damascus—collected in March 2023 and March 2024. The source data follow households over two waves; the thesis analyses the combined observations using pooled regressions.</p>
           <p>Starting from 3,374 household observations, I restricted the sample to female-headed households, then to married or widowed heads, and excluded records with incomplete relevant variables. The final analytical sample comprises <strong>932 observations</strong>. </p>
           <figure>
-            <a class="figure-link" href="../images/thesis-conceptual-framework.png" target="_blank" rel="noopener noreferrer">
-              <img src="../images/thesis-conceptual-framework.png" alt="Original thesis conceptual framework connecting women's empowerment, marital status and food security" loading="lazy">
-            </a>
-            <figcaption>Conceptual framework reproduced from the thesis (Figure 1).</figcaption>
-          </figure>
-          <figure>
-            <a class="figure-link" href="../images/thesis-sample.png" target="_blank" rel="noopener noreferrer">
-              <img src="../images/thesis-sample.png" alt="Original flowchart showing analytical sample selection" loading="lazy">
+            <a class="figure-link" href="../images/thesis-sample-selection.png" rel="noopener noreferrer" target="_blank">
+              <img alt="Original flowchart showing analytical sample selection" loading="lazy" src="../images/thesis-sample-selection.png" />
             </a>
             <figcaption>Analytical sample selection, reproduced from the thesis (Figure 3).</figcaption>
           </figure>
+          <section class="detail-section">
+            <h2>Variables and measurement</h2>
+            <p>Food security is multidimensional, so I constructed and analysed three indicators capturing different aspects of household food access and responses to scarcity:</p>
+            <div class="method-grid">
+              <div>
+                <strong>Household Dietary Diversity Score (HDDS)</strong>
+                <span>Number of food groups consumed during the previous 24 hours; a measure of dietary variety.</span>
+              </div>
+              <div>
+                <strong>Food Consumption Score (FCS)</strong>
+                <span>Weighted frequency of food-group consumption over seven days; captures consumption frequency and dietary quality.</span>
+              </div>
+              <div>
+                <strong>Reduced Coping Strategy Index (rCSI)</strong>
+                <span>Frequency and severity of short-term food-related coping behaviours over seven days; higher values indicate greater food insecurity.</span>
+              </div>
+              <div>
+                <strong>Key explanatory variables</strong>
+                <span>Marital status (married or widowed), land ownership and size, education, and relevant household characteristics.</span>
+              </div>
+            </div>
+          </section>
         </section>
         <section class="detail-section">
-          <h2>Measurement &amp; empirical strategy</h2>
-          <p>Food security is multidimensional, so I constructed and analysed three indicators capturing different aspects of household food access and responses to scarcity:</p>
-          <div class="method-grid">
-            <div>
-              <strong>Household Dietary Diversity Score (HDDS)</strong>
-              <span>Number of food groups consumed during the previous 24 hours; a measure of dietary variety.</span>
-            </div>
-            <div>
-              <strong>Food Consumption Score (FCS)</strong>
-              <span>Weighted frequency of food-group consumption over seven days; captures consumption frequency and dietary quality.</span>
-            </div>
-            <div>
-              <strong>Reduced Coping Strategy Index (rCSI)</strong>
-              <span>Frequency and severity of short-term food-related coping behaviours over seven days; higher values indicate greater food insecurity.</span>
-            </div>
-            <div>
-              <strong>Empirical approach</strong>
-              <span>Multivariate pooled ordinary least squares (OLS) models, including demographic and household covariates and interaction specifications.</span>
-            </div>
+          <h2>Empirical strategy</h2>
+          <p>I estimated pooled ordinary least squares (OLS) regressions for three complementary outcomes—HDDS, FCS and rCSI—to examine associations between marital status, productive resources and household food security.</p>
+          <h3>Baseline specification</h3>
+          <div aria-label="Y i t equals alpha plus beta one widow i t plus gamma prime X i t plus epsilon i t" class="thesis-equation" role="math">Y <sub>it</sub> = α + β <sub>1</sub> Widow <sub>it</sub> + γ′X <sub>it</sub> + ε <sub>it</sub>
           </div>
-          <p>Explanatory variables include <strong>marital status</strong> (married versus widowed), <strong>land access and size</strong>, and <strong>education</strong>. Interaction terms test whether the associations of land and education with food-security outcomes differ by marital status. Standard errors are clustered at household level to account partly for repeated observations. </p>
-          <p>The pooled OLS design estimates <strong>conditional associations, not causal effects</strong>. Using three outcomes allows the analysis to distinguish dietary diversity, food consumption and coping responses rather than relying on a single measure. </p>
+          <p>Here, <em>Y</em> denotes a food-security outcome for household <em>i</em> in wave <em>t</em>; <em>Widow</em> identifies widowed female household heads, and <em>X</em> represents observed household and socioeconomic covariates. The coefficient β <sub>1</sub> describes the conditional association between widowhood and the outcome. </p>
+          <h3>Resource and interaction specifications</h3>
+          <div aria-label="Y i t equals alpha plus beta one widow plus beta two resource plus beta three widow times resource plus gamma prime X plus epsilon" class="thesis-equation" role="math">Y <sub>it</sub> = α + β <sub>1</sub> Widow <sub>it</sub> + β <sub>2</sub> Resource <sub>it</sub> + β <sub>3</sub> (Widow <sub>it</sub> × Resource <sub>it</sub>) + γ′X <sub>it</sub> + ε <sub>it</sub>
+          </div>
+          <p>Extended models examine land and education in separate specifications and test whether their associations with food-security outcomes differ by marital status. The interaction coefficient β <sub>3</sub> captures that difference. The equations summarize the model families rather than listing every estimated specification. </p>
+          <p>Standard errors are clustered at household level to account for repeated observations across waves. As an observational pooled OLS analysis, the results describe <strong>conditional associations, not causal effects</strong>. </p>
         </section>
         <section class="detail-section">
           <h2>Key findings</h2>
@@ -131,25 +202,27 @@
               <strong>Education and interactions:</strong> education was not consistently associated with improved food-security outcomes; the hypothesized additional benefits of land and education for widows were not robustly supported by the interaction models.
             </li>
           </ul>
-          <figure>
-            <a class="figure-link" href="../images/thesis-fcs.png" target="_blank" rel="noopener noreferrer">
-              <img src="../images/thesis-fcs.png" alt="Original thesis figure examining food consumption and marital status" loading="lazy">
-            </a>
-            <figcaption>Original food-consumption analysis figure from the thesis.</figcaption>
-          </figure>
-          <figure>
-            <a class="figure-link" href="../images/thesis-hdds.png" target="_blank" rel="noopener noreferrer">
-              <img src="../images/thesis-hdds.png" alt="Original thesis figure examining dietary diversity and marital status" loading="lazy">
-            </a>
-            <figcaption>Original dietary-diversity analysis figure from the thesis.</figcaption>
-          </figure>
+          <div class="thesis-figure-grid">
+            <figure>
+              <a class="figure-link" href="../images/thesis-fcs.png" rel="noopener noreferrer" target="_blank">
+                <img alt="Original thesis figure examining food consumption and marital status" loading="lazy" src="../images/thesis-fcs.png" />
+              </a>
+              <figcaption>Original food-consumption analysis figure from the thesis.</figcaption>
+            </figure>
+            <figure>
+              <a class="figure-link" href="../images/thesis-hdds.png" rel="noopener noreferrer" target="_blank">
+                <img alt="Original thesis figure examining dietary diversity and marital status" loading="lazy" src="../images/thesis-hdds.png" />
+              </a>
+              <figcaption>Original dietary-diversity analysis figure from the thesis.</figcaption>
+            </figure>
+          </div>
         </section>
         <section class="detail-section">
           <h2>Discussion &amp; limitations</h2>
           <p>The findings suggest that household headship alone does not guarantee access to the resources needed for food security. Widowhood is associated with greater vulnerability in food consumption, while land access appears to be an important protective resource. The absence of consistent education effects points to constraints on translating individual capabilities into material welfare in a conflict-affected setting.</p>
           <p>These results are <strong>observational</strong>. Pooled OLS cannot eliminate unobserved household characteristics or selection bias, and clustering standard errors does not resolve those identification limitations. The sample is restricted to female-headed agricultural households in selected Syrian governorates, limiting generalizability. The results motivate gender-sensitive support that addresses access to productive resources alongside wider institutional barriers. </p>
           <div class="detail-links">
-            <a href="../documents/masters-thesis.pdf" target="_blank" rel="noopener noreferrer">Read the full thesis (PDF) ↗</a>
+            <a href="../documents/masters-thesis.pdf" rel="noopener noreferrer" target="_blank">Read the full thesis (PDF) ↗</a>
           </div>
         </section>
       </div>
